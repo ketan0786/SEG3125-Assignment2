@@ -1,0 +1,204 @@
+/* ============================================================
+   TULIP DENTAL CARE — Global Styles
+   SEG3125 Assignment 2
+   ============================================================ */
+
+/* Google Fonts loaded in public/index.html */
+
+:root {
+  /* === PRIMARY: Trustworthy Blue === */
+  --blue:         #185FA5;
+  --blue-dark:    #0C447C;
+  --blue-mid:     #B5D4F4;
+  --blue-light:   #E6F1FB;
+
+  /* === ACCENT: Teal Mint === */
+  --teal:         #0FA89A;
+  --teal-dark:    #0A7A6F;
+  --teal-mid:     #7ED6CF;
+  --teal-light:   #E6F7F6;
+  --teal-dark:    #0A7A6F;
+  --teal-bright:  #12C4B4;
+
+  /* === REMAP — coral → teal, pink → blue === */
+  --coral:        #0FA89A;
+  --coral-dark:   #0A7A6F;
+  --coral-mid:    #7ED6CF;
+  --coral-light:  #E6F7F6;
+
+  --pink:         #185FA5;
+  --pink-dark:    #0C447C;
+  --pink-mid:     #B5D4F4;
+  --pink-light:   #E6F1FB;
+
+  /* Backgrounds */
+  --cream:        #F0F9F8;
+  --cream-dark:   #E6F7F6;
+
+  /* === NEUTRALS === */
+  --white:        #ffffff;
+  --text:         #1C1C1C;
+  --muted:        #888888;
+  --border:       #B5D4D2;
+
+  /* === TYPOGRAPHY === */
+  --font-display: 'Playfair Display', serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  /* === SPACING === */
+  --radius-sm:    8px;
+  --radius-md:    14px;
+  --radius-lg:    20px;
+  --radius-pill:  99px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--white);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ============================================================
+   BOOTSTRAP OVERRIDES — match our theme
+   ============================================================ */
+.btn-coral {
+  background-color: var(--coral);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 10px 26px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.btn-coral:hover { background-color: var(--coral-dark); color: #fff; }
+
+.btn-coral-outline {
+  background: transparent;
+  color: var(--coral);
+  border: 1.5px solid var(--coral);
+  border-radius: var(--radius-pill);
+  padding: 10px 26px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.btn-coral-outline:hover { background: var(--coral-light); color: var(--coral-dark); }
+
+.btn-pink {
+  background-color: var(--pink);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 10px 26px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.btn-pink:hover { background-color: var(--pink-dark); color: #fff; }
+
+.btn-pink-outline {
+  background: transparent;
+  color: var(--pink);
+  border: 1.5px solid var(--pink);
+  border-radius: var(--radius-pill);
+  padding: 10px 26px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+}
+.btn-pink-outline:hover { background: var(--pink-light); }
+
+.btn-blue {
+  background-color: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 10px 26px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+}
+.btn-blue:hover { background-color: var(--blue-dark); color: #fff; }
+
+.btn-blue-outline {
+  background: transparent;
+  color: var(--blue);
+  border: 1.5px solid var(--blue);
+  border-radius: var(--radius-pill);
+  padding: 10px 26px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* ============================================================
+   SHARED COMPONENTS
+   ============================================================ */
+
+/* Section header */
+.section-header { text-align: center; margin-bottom: 40px; }
+.section-header h2 { font-size: 32px; color: var(--coral-dark); margin-bottom: 8px; }
+.section-header p  { font-size: 14px; color: var(--muted); }
+
+/* Badge / tag pill */
+.tag-pill {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 14px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 12px;
+}
+.tag-coral { background: var(--coral-light); color: var(--coral-dark); }
+.tag-pink  { background: var(--pink-light);  color: var(--pink-dark);  }
+.tag-blue  { background: var(--blue-light);  color: var(--blue-dark);  }
+
+/* Cards */
+.card-warm {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.card-warm:hover { transform: translateY(-3px); border-color: var(--coral-mid); }
+
+/* Toast notification */
+.toast-notify {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--coral-dark);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.toast-notify.show { opacity: 1; }
