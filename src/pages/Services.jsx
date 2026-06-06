@@ -100,7 +100,7 @@ export default function Services({ setPage, resetBooking }) {
                     resetBooking({
                       icon: '🔬',
                       name: 'Root Canal Consultation',
-                      desc: 'Meet Dr. Patel to discuss your root canal options · 45 min',
+                      desc: 'Meet Dr. James Reid to discuss your root canal options · 45 min',
                       price: 'Free',
                     });
                     setPage('booking');
