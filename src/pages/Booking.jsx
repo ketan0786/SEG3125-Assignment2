@@ -6,7 +6,7 @@ const SERVICES = [
   { icon: '✨', name: 'Wedding Whitening Package',  desc: 'Up to 10 shades whiter, includes touch-up · 60 min',         price: '$299' },
   { icon: '⭐', name: 'Premium Whitening',           desc: 'Up to 6-8 shades whiter, long-lasting · 45 min',             price: '$199' },
   { icon: '💎', name: 'Basic Whitening',             desc: 'Essential brightening, great for maintenance · 30 min',      price: '$99'  },
-  { icon: '🔬', name: 'Root Canal Consultation',    desc: 'Meet Dr. Patel to discuss your root canal options · 45 min',  price: 'Free' },
+  { icon: '🔬', name: 'Root Canal Consultation', desc: 'Meet Dr. James Reid to discuss your root canal options · 45 min', price: 'Free' },
   { icon: '📋', name: 'General Checkup',             desc: 'Routine exam and X-rays · 30 min',                           price: '$80'  },
 ];
 
@@ -284,7 +284,7 @@ export default function Booking({ showToast, preSelected }) {
                   { label: 'Service', value: `${service?.icon} ${service?.name}` },
                   { label: 'Date',    value: `June ${day}, 2026`                 },
                   { label: 'Time',    value: time                                },
-                  { label: 'Dentist', value: 'Dr. Patel — Tulip Dental Care'     },
+                  { label: 'Dentist', value: service?.name?.includes('Root Canal') ? 'Dr. James Reid — Endodontist' : 'Dr. Anika Patel — Tulip Dental Care' },
                   { label: 'Total',   value: service?.price, highlight: true     },
                 ].map(r => (
                   <div key={r.label} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '8px 0', borderBottom: '1px solid var(--blue-mid)', fontSize: '13px' }}>
