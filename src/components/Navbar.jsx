@@ -21,7 +21,8 @@ export default function Navbar({ page, setPage, resetBooking }) {
           <img
             src="/logo.png"
             alt="Tulip Dental Care Logo"
-            style={{ width: '52px', height: '52px', objectFit: 'contain' }}
+           
+            style={{ width: 'clamp(48px, 5vw, 75px)', height: 'clamp(48px, 5vw, 75px)', objectFit: 'contain' }}
           />
           <div>
             <span className="navbar-brand-text">Tulip Dental Care</span>
