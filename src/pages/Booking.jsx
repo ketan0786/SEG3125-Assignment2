@@ -122,6 +122,7 @@ export default function Booking({ showToast, preSelected }) {
                   <div key={s.name} onClick={() => setService(s)}
                     style={{
                       display: 'flex', alignItems: 'center', gap: '14px',
+                      display: 'flex', alignItems: 'flex-start', gap: '14px', flexWrap: 'wrap',
                       padding: '14px 18px', borderRadius: 'var(--radius-md)', cursor: 'pointer',
                       border: service?.name === s.name ? '1.5px solid var(--blue)' : '1.5px solid var(--blue-mid)',
                       background: service?.name === s.name ? 'var(--blue-light)' : '#fff',
