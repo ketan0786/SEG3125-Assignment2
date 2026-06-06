@@ -66,8 +66,9 @@ export default function Home({ setPage, resetBooking }) {
               <span style={{ display: 'inline-block', background: 'rgba(255,255,255,0.15)', color: '#fff', fontSize: '11px', fontWeight: 500, padding: '5px 16px', borderRadius: '99px', marginBottom: '20px' }}>
                 🌷 Serving Ottawa families since 2010
               </span>
-              <h1 style={{ fontSize: '54px', color: '#ffffff', marginBottom: '6px', lineHeight: 1.1, fontFamily: 'var(--font-display)' }}>A Smile for</h1>
-              <h1 style={{ fontSize: '54px', color: '#7ED6CF', marginBottom: '16px', lineHeight: 1.1, fontFamily: 'var(--font-display)' }}>Every Occasion</h1>
+              <h1 style={{ fontSize: 'clamp(32px, 7vw, 54px)', color: '#ffffff', marginBottom: '6px', lineHeight: 1.1, fontFamily: 'var(--font-display)' }}>A Smile for</h1>
+              
+              <h1 style={{ fontSize: 'clamp(32px, 7vw, 54px)', color: '#7ED6CF', marginBottom: '16px', lineHeight: 1.1, fontFamily: 'var(--font-display)' }}>Every Occasion</h1>
               <p style={{ fontSize: '15px', color: 'rgba(255,255,255,0.85)', lineHeight: 1.8, marginBottom: '12px', maxWidth: '420px' }}>
                 Whether it is your child's first visit or a procedure you have been putting off — we make every appointment feel safe, clear, and worth it.
               </p>
