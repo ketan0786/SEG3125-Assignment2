@@ -19,7 +19,7 @@ export default function Footer() {
         </div>
         <div style={{ fontSize: '11px', opacity: 0.75 }} className="text-center text-md-end">
           <div>Designed by Ketan Kumar · SEG3125 Assignment 2</div>
-          <div style={{ marginTop: '3px' }}>123 Tulip Avenue, Ottawa, ON · (613) 555-0192</div>
+          <div style={{ marginTop: '3px' }}>123 Tulip Avenue, Ottawa, ON · (613) 647-1644</div>
         </div>
       </div>
     </footer>

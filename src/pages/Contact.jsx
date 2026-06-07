@@ -16,7 +16,7 @@ export default function Contact({ showToast }) {
 
   const info = [
     { icon: '📍', title: 'Location',  text: '123 Tulip Avenue\nOttawa, ON K1A 0A1'   },
-    { icon: '📞', title: 'Phone',     text: '(613) 555-0192'                          },
+    { icon: '📞', title: 'Phone',     text: '(613) 647-1644'                          },
     { icon: '🕐', title: 'Hours',     text: 'Mon-Fri: 8am-6pm\nSaturday: 9am-3pm'    },
     { icon: '✉️', title: 'Email',     text: 'hello@tulipdentalcare.ca'                },
   ];

@@ -3,21 +3,21 @@
 export default function About({ setPage }) {
   const team = [
     {
-      initials: 'AP',
+      image: 'Anika Patel.jpg',
       name: 'Dr. Anika Patel',
       role: 'General & Cosmetic Dentist',
       detail: 'Dr. Patel founded Tulip Dental Care in 2010 after noticing how many patients avoided the dentist out of fear. Her approach: explain everything, rush nothing.',
       years: '16 years experience',
     },
     {
-      initials: 'JR',
+      image: 'James Reid.jpg',
       name: 'Dr. James Reid',
       role: 'Endodontist — Root Canal Specialist',
       detail: 'Dr. Reid has performed over 3,000 root canal procedures. His patients consistently say they were surprised by how painless the experience was.',
       years: '12 years experience',
     },
     {
-      initials: 'SL',
+      image: 'Sophee Lee.jpg',
       name: 'Dr. Sophie Lee',
       role: 'Preventive Dentist',
       detail: 'Dr. Lee specialises in children and anxious adults. She believes the best dental treatment is the one you actually show up for.',
@@ -133,15 +133,17 @@ export default function About({ setPage }) {
                   onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-4px)'}
                   onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}
                 >
-                  <div style={{
-                    width: 68, height: 68, borderRadius: '50%',
-                    background: 'linear-gradient(135deg, #185FA5, #0FA89A)',
-                    color: '#fff', fontFamily: 'var(--font-display)', fontSize: '20px',
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    margin: '0 auto 16px', boxShadow: '0 4px 16px rgba(24,95,165,0.3)',
-                  }}>
-                    {t.initials}
-                  </div>
+                  <img
+                    src={`/${t.image}`}
+                    alt={t.name}
+                    style={{
+                      width: '90px', height: '90px', borderRadius: '50%',
+                      objectFit: 'cover', objectPosition: 'top',
+                      display: 'block', margin: '0 auto 16px',
+                      boxShadow: '0 4px 16px rgba(24,95,165,0.3)',
+                      border: '3px solid var(--blue-mid)',
+                    }}
+                  />
                   <div style={{ fontSize: '16px', fontWeight: 500, color: 'var(--blue-dark)', marginBottom: '4px' }}>{t.name}</div>
                   <div style={{ fontSize: '12px', color: 'var(--teal)', marginBottom: '12px', fontWeight: 500 }}>{t.role}</div>
                   <div style={{ fontSize: '11px', color: 'var(--muted)', marginBottom: '12px' }}>{t.years}</div>
